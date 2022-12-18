@@ -1,0 +1,22 @@
+WHILE next-is-not-wall DO
+  infect
+  infect
+  infect
+  turnleft
+  infect
+  IF next-is-not-enemy THEN
+  END IF
+  IF random THEN
+    turnleft
+    infect
+  ELSE
+    go-for-it
+    turnright
+    look-for-something
+    IF true THEN
+        turnright
+        moonwalk
+    END IF
+  END IF
+  skip
+END WHILE

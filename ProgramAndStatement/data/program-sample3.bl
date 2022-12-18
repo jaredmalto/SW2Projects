@@ -1,0 +1,45 @@
+PROGRAM Test IS
+
+  INSTRUCTION one IS
+     move
+     turnright
+     move
+     turnleft
+     move
+  END one
+  
+  INSTRUCTION two IS
+    turnright
+    turnright
+  END two
+  
+  INSTRUCTION three IS
+    move
+    move
+    move
+  END three
+  
+  INSTRUCTION four IS
+    infect
+    turnright
+  END four
+  
+  INSTRUCTION five IS
+    infect
+    turnright
+    infect
+  END five
+
+BEGIN
+  WHILE next-is-enemy DO
+    IF next-is-wall THEN
+      two
+      three
+    ELSE
+      one
+      four
+      two
+      five
+    END IF
+  END WHILE
+END Test

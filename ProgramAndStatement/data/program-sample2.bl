@@ -1,0 +1,33 @@
+PROGRAM Test IS
+
+  INSTRUCTION one IS
+     move
+     turnleft
+     move
+  END one
+  
+  INSTRUCTION two IS
+    infect
+  END two
+  
+  INSTRUCTION three IS
+    turnleft
+    infect
+    turnleft
+    move
+  END three
+  
+  INSTRUCTION four IS
+    turnright
+    infect
+    turnright
+    move
+  END four
+
+BEGIN
+  WHILE true DO
+    two
+    one
+    three
+  END WHILE
+END Test
